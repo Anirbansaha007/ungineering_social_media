@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Web_Login Page</title>
-        <link rel="stylesheet" href="/social-media/css/login.css"/>
+        <title>Web_Registration</title>
+        <link rel="stylesheet" href="/social-media/css/reg.css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
     </head>  
     <body>
         <div class="header">
             <div class="row1">
-                <div class="row1col1"><img style="float:right;" src="img/ungineering_logo.svg" alt="Ungineering logo"></div>
+                <div class="row1col1"><img style="float:right;" src="img1/ungineering_logo.svg" alt=" Ungineering logo"></div>
                 <div class="row1col2">
                     <h1><span>un</span>gineering</h1>
                     <h6>A <span>bit</span> of knwoledge is good.A <span>byte</span> is better</h6>
@@ -16,15 +16,19 @@
             </div>
             <div class="row2">
                 <div class="row2col1">
-                    <a style="color: black;" href="/social-media/login.html" ">Existing User</a>
+                    <a style="text-decoration: underline red;" href="/social-media/login.html"><span>Existing User</span></a>
                 </div>
                 <div class="row2col2">
-                    <a style="color: red;" href="/social-media/reg.html "><span>New User</span></a>
+                    <a style="color: black;" href="/social-media/reg.html">New User</a>
                 </div>
             </div>
             <form method="post" action="c.php">
-                <div id="btext">
-                    <h1>Login into Ungineering</br>Account</h1>
+                <div id="bigtext">
+                    <h1>Create New Account at </br>Ungineering</h1>
+                </div>
+                <div class="form">
+                    <div class="label">Name</div>
+                    <input class="input" type="text">
                 </div>
                  <div class="form">
                     <div class="label">Email</div>
@@ -33,9 +37,13 @@
                  <div class="form">
                     <div class="label">Password</div>
                     <input class="input" type="password">
-                 </div>
-                <div class="ad"><input type="submit" href=/social-media/reg.html value="Log-in"></div>
-                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/reg.html"><span>New User,Create Account</span></a></div>
+                </div>
+                 <div class="form">
+                    <div class="label">Confirm Password</div>
+                    <input class="input" type="password">
+                </div>
+                <div class="ad"><input type="submit" value="Create Account"></div>
+                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/login.html"><span>Existing User,Login</span></a></div>
             </form>
         </div>
         <div class="footer">
