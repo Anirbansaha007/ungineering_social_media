@@ -16,26 +16,26 @@
             </div>
             <div class="row2">
                 <div class="row2col1">
-                    <a style="color: black;" href="/social-media/login.html" ">Existing User</a>
+                    <a style="color: black;" href="/social-media/login.php" ">Existing User</a>
                 </div>
                 <div class="row2col2">
-                    <a style="color: red;" href="/social-media/reg.html "><span>New User</span></a>
+                    <a style="color: red;" href="/social-media/registration.php "><span>New User</span></a>
                 </div>
             </div>
-            <form method="post" action="c.php">
+            <form method="post" action="login_submit.php">
                 <div id="btext">
                     <h1>Login into Ungineering</br>Account</h1>
                 </div>
                  <div class="form">
                     <div class="label">Email</div>
-                    <input class="input" type="email">
+                    <input class="input" type="text" name="email">
                 </div>
                  <div class="form">
                     <div class="label">Password</div>
-                    <input class="input" type="password">
+                    <input class="input" type="password" name="password">
                  </div>
-                <div class="ad"><input type="submit" href=/social-media/reg.html value="Log-in"></div>
-                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/reg.html"><span>New User,Create Account</span></a></div>
+                <div class="ad"><input type="submit" href=/social-media/registration.php value="Log-in"></div>
+                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/registration.php"><span>New User,Create Account</span></a></div>
             </form>
         </div>
         <div class="footer">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Web_Registration</title>
-        <link rel="stylesheet" href="css/reg.css"/>
+        <link rel="stylesheet" href="css/registration.css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
     </head>  
     <body>
@@ -16,34 +16,34 @@
             </div>
             <div class="row2">
                 <div class="row2col1">
-                    <a style="text-decoration: underline red;" href="/social-media/login.html"><span>Existing User</span></a>
+                    <a style="text-decoration: underline red;" href="/social-media/login.php"><span>Existing User</span></a>
                 </div>
                 <div class="row2col2">
-                    <a style="color: black;" href="/social-media/reg.html">New User</a>
+                    <a style="color: black;" href="/social-media/registration.php">New User</a>
                 </div>
             </div>
-            <form method="post" action="c.php">
+            <form method="post" action="registration_submit.php">
                 <div id="bigtext">
                     <h1>Create New Account at </br>Ungineering</h1>
                 </div>
                 <div class="form">
                     <div class="label">Name</div>
-                    <input class="input" type="text">
+                    <input class="input" type="text" name="name">
                 </div>
                  <div class="form">
                     <div class="label">Email</div>
-                    <input class="input" type="email">
+                    <input class="input" type="text" name="email">
                 </div>
                  <div class="form">
                     <div class="label">Password</div>
-                    <input class="input" type="password">
+                    <input class="input" type="password" name="password">
                 </div>
                  <div class="form">
                     <div class="label">Confirm Password</div>
-                    <input class="input" type="password">
+                    <input class="input" type="password" name="password">
                 </div>
-                <div class="ad"><input type="submit" value="Create Account"></div>
-                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/login.html"><span>Existing User,Login</span></a></div>
+                <div class="ad"><input type="submit" name="submit" value="Submit"></div>
+                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/login.php"><span>Existing User,Login</span></a></div>
             </form>
         </div>
         <div class="footer">

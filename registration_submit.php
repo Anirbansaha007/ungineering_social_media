@@ -2,7 +2,7 @@
     $hostname="127.0.0.1";
     $username="root";
     $db_password="123456";
-    $db_name="ungineering";
+    $db_name="social_media";
     
     $conn = mysqli_connect($hostname,$username,$db_password,$db_name);
     if(!$conn){
@@ -17,5 +17,8 @@
         die("Error:". $sql . "<br/>" . mysqli_error($conn));
     }
     echo "Registration Sucessfull";
+    ?>
+    <a href="loggedin_homepage.php">CLICK HERE <br/></a> TO GO TO HOME PAGE.
+    <?php
     mysqli_close($conn);  
 ?>  
