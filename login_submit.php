@@ -34,7 +34,7 @@
         $_SESSION['id'] = $row['id'];
         $_SESSION['name'] = $row['name'];
         ?>
-        <a href="loggedin_homepage.php">CLICK HERE <br/></a> TO GO TO HOME PAGE.
+        <a href="homepage.php">CLICK HERE <br/></a> TO GO TO HOME PAGE.
         <?php        
     }
     mysqli_close($conn);  

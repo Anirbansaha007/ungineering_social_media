@@ -16,10 +16,10 @@
             </div>
             <div class="row2">
                 <div class="row2col1">
-                    <a style="text-decoration: underline red;" href="/social-media/login.php"><span>Existing User</span></a>
+                    <a style="text-decoration: underline red;" href="login.php"><span>Existing User</span></a>
                 </div>
                 <div class="row2col2">
-                    <a style="color: black;" href="/social-media/registration.php">New User</a>
+                    <a style="color: black;" href="registration.php">New User</a>
                 </div>
             </div>
             <form method="post" action="registration_submit.php">
@@ -43,7 +43,7 @@
                     <input class="input" type="password" name="password">
                 </div>
                 <div class="ad"><input type="submit" name="submit" value="Submit"></div>
-                <div class="ad"><a style="text-decoration: underline red;"href="/social-media/login.php"><span>Existing User,Login</span></a></div>
+                <div class="ad"><a style="text-decoration: underline red;"href="login.php"><span>Existing User,Login</span></a></div>
             </form>
         </div>
         <div class="footer">
