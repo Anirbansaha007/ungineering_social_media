@@ -42,7 +42,7 @@
                     <div class="label">Confirm Password</div>
                     <input class="input" type="password" name="password">
                 </div>
-                <div class="ad"><input type="submit" name="submit" value="Submit"></div>
+                <div class="ad"><input type="submit" name="submit" value="Create Account"></div>
                 <div class="ad"><a style="text-decoration: underline red;"href="login.php"><span>Existing User,Login</span></a></div>
             </form>
         </div>
