@@ -18,20 +18,7 @@
         die("Error:". $sql . "<br/>" . mysqli_error($conn));
     }
     echo "Registration Sucessfull";
-    /*$sql1= "SELECT * FROM users";
-    $result1 = mysqli_query($conn,$sql1);
-    if(!$result1){
-        die("Error: " . $sql . "<br>" . mysqli_error($conn));
-    }
-    while($row=mysqli_fetch_array($result1))
-    {
-        if($row['email']==$email){
-        $_SESSION['id'] = $row['id'];
-        $_SESSION['name'] = $row['name'];
-        }
-    }*///it will be used when we need to go homepage directly after registraion
-    ?>
-    <a href="login.php">CLICK HERE <br/></a> TO GO TO LOGIN PAGE.
-    <?php
+    header("Location:login.php");
+        exit;
     mysqli_close($conn);  
 ?>  

@@ -37,5 +37,7 @@
         <a href="homepage.php">CLICK HERE <br/></a> TO GO TO HOME PAGE.
         <?php        
     }
+    header("Location:homepage.php");
+        exit;
     mysqli_close($conn);  
 ?>  
