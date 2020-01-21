@@ -28,19 +28,19 @@
                 </div>
                 <div class="form">
                     <div class="label">Name</div>
-                    <input class="input" type="text" name="name">
+                    <input class="input" type="text" name="name" required>
                 </div>
                  <div class="form">
                     <div class="label">Email</div>
-                    <input class="input" type="text" name="email">
+                    <input class="input" type="text" name="email" required>
                 </div>
                  <div class="form">
                     <div class="label">Password</div>
-                    <input class="input" type="password" name="password">
+                    <input class="input" type="password" name="password" required>
                 </div>
                  <div class="form">
                     <div class="label">Confirm Password</div>
-                    <input class="input" type="password" name="password">
+                    <input class="input" type="password" name="password" required>
                 </div>
                 <div class="ad"><input type="submit" name="submit" value="Create Account"></div>
                 <div class="ad"><a style="text-decoration: underline red;"href="login.php"><span>Existing User,Login</span></a></div>

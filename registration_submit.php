@@ -24,10 +24,12 @@
         die("Error: " . $sql . "<br>" . mysqli_error($conn));
     }
     while($row=mysqli_fetch_array($result1))
+    {
         if($row['email']==$email){
         $_SESSION['id'] = $row['id'];
         $_SESSION['name'] = $row['name'];
-        }*///it will be used when we need to go homepage directly after registraion
+        }
+    }*///it will be used when we need to go homepage directly after registraion
     ?>
     <a href="login.php">CLICK HERE <br/></a> TO GO TO LOGIN PAGE.
     <?php

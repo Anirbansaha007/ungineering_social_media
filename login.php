@@ -28,11 +28,11 @@
                 </div>
                  <div class="form">
                     <div class="label">Email</div>
-                    <input class="input" type="text" name="email">
+                    <input class="input" type="text" name="email" required>
                 </div>
                  <div class="form">
                     <div class="label">Password</div>
-                    <input class="input" type="password" name="password">
+                    <input class="input" type="password" name="password" required>
                  </div>
                 <div class="ad"><input type="submit" href=social_media/registration.php value="Log-in"></div>
                 <div class="ad"><a style="text-decoration: underline red;"href="registration.php"><span>New User,Create Account</span></a></div>

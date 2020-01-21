@@ -89,9 +89,13 @@
                 </div>
                 <div>
                     <form method="post" action="status_submit.php">
-                        <textarea class="b5" name="status">
-                        </textarea>
-                        <input class="b6" type="submit" name="submit" value="Post"/>
+                        <div>
+                            <textarea class="b5" name="status" required>
+                            </textarea>
+                        </div>
+                        <div>
+                            <input class="b6" type="submit" name="submit" value="Post"/>
+                        </div>
                     <form>
                 </div>    
             </div>
@@ -130,8 +134,8 @@
                 </div>
                 <div class="b3">
                     <?php
-                        $time=$row['time'];
-                        echo $time;                        
+                        $datetime= $row['datetime'];
+                        echo "Time : " . date("H:i \H\\r\s T | d M Y",strtotime($datetime));                        
                     ?>
                 </div>               
             </div>

@@ -10,15 +10,23 @@
         die("Connection failed: ". mysqli_connect_error());
     }
     $id=$_SESSION['id'];
-    $post=$_POST['status'];
-    $sql = "INSERT INTO statuses (user_id,status,time) VALUES ('$id','$post',now())";
-    $result = mysqli_query($conn,$sql);
-    if(!$result){
-        die("Error: ". $sql. "<br/>". mysqli_error($conn));
+    $status=$_POST['status'];
+    if(empty(trim($_POST['status'])))
+    {
+        echo "post can't be empty";
+        ?>
+        <br/><a href="homepage.php">RETRY</a>
+        <?php        
     }
-    echo "status posted!!"
-    ?>
-    <br/><a href="homepage.php">click here</a> to go to homepage
-    <?php
+    else
+    {
+        $sql = "INSERT INTO statuses (user_id,status,datetime) VALUES ('$id','$status',now())";
+        $result = mysqli_query($conn,$sql);
+        if(!$result){
+            die("Error: ". $sql. "<br/>". mysqli_error($conn));    
+        }
+        header("Location:homepage.php");
+        exit;
+    }
     mysqli_close($conn);
 ?>
