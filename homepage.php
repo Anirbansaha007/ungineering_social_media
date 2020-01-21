@@ -90,10 +90,9 @@
                 <div>
                     <form method="post" action="status_submit.php">
                         <div>
-                            <textarea class="b5" name="status" required>
-                            </textarea>
+                            <textarea class="b5" name="status" required></textarea>
                         </div>
-                        <div>
+                        <div class="button">
                             <input class="b6" type="submit" name="submit" value="Post"/>
                         </div>
                     <form>
