@@ -18,4 +18,4 @@ CREATE TABLE statuses (
     PRIMARY KEY (id), 
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
+ALTER TABLE books CHANGE time datetime datetime;
