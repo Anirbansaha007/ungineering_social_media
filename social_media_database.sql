@@ -18,4 +18,6 @@ CREATE TABLE statuses (
     PRIMARY KEY (id), 
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-ALTER TABLE books CHANGE time datetime datetime;
+ALTER TABLE users CHANGE time datetime datetime;
+ALTER TABLE users MODIFY email VARCHAR(255) NOT NULL UNIQUE;
+

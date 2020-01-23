@@ -15,7 +15,7 @@
     $sql = "INSERT INTO users (name,email,password) VALUES ('$name','$email','$password')";
     $result = mysqli_query($conn,$sql);
     if(!$result){
-        die("Error:". $sql . "<br/>" . mysqli_error($conn));
+        die("Error:" . mysqli_error($conn));
     }
     echo "Registration Sucessfull";
     header("Location:login.php");

@@ -8,7 +8,7 @@
     <body>
         <div class="header">
             <div class="row1">
-                <div class="row1col1"><img style="float:right;" src="image/ungineering_logo.svg" alt="Ungineering logo"></div>
+                <div class="row1col1"><a href="homepage.php"><img style="float:right;" src="image/ungineering_logo.svg" alt="Ungineering logo"></a></div>
                 <div class="row1col2">
                     <h1><span>un</span>gineering</h1>
                     <h6>A <span>bit</span> of knwoledge is good.A <span>byte</span> is better</h6>
