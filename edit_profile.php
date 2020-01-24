@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>social media</title>
-        <link rel="stylesheet" href="css/editprofile.css"/>
+        <link rel="stylesheet" href="css/edit_profile.css"/>
     </head>
     <body>
         <div class="r1">
