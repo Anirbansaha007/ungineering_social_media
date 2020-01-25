@@ -88,7 +88,7 @@
                     Write something here
                 </div>
                 <div>
-                    <form method="post" action="status_submit.php">
+                    <form class=form_fillup method="post" action="status_submit.php">
                         <div>
                             <textarea class="b5" name="status" required></textarea>
                         </div>
@@ -101,6 +101,7 @@
             <?php
             }
         ?>
+            <div class= status_show>
             <?php
                 $sql= "SELECT * FROM statuses ORDER BY id DESC";
                 $result = mysqli_query($conn,$sql);
@@ -109,40 +110,41 @@
                 }
                 while($row=mysqli_fetch_array($result)){
             ?>   
-            <div class="br">                
-                <div class="b1">
-                    <h4>
+                <div class="br">                
+                    <div class="b1">
+                        <h4>
+                            <?php
+                                $id=$row['user_id'];
+                                $sql1= "SELECT users.name FROM statuses INNER JOIN users ON users.id=statuses.user_id WHERE statuses.user_id=$id";
+                                $result1 = mysqli_query($conn,$sql1);
+                                if(!$result1){
+                                    die("Error: " . $sql . "<br>" . mysqli_error($conn));
+                                }
+                                $row1=mysqli_fetch_array($result1);
+                                $name=$row1['name'];
+                                echo $name;
+                            ?>                
+                        </h4>
+                    </div>                
+                    <div class="b2">
                         <?php
-                            $id=$row['user_id'];
-                            $sql1= "SELECT users.name FROM statuses INNER JOIN users ON users.id=statuses.user_id WHERE statuses.user_id=$id";
-                            $result1 = mysqli_query($conn,$sql1);
-                            if(!$result1){
-                                die("Error: " . $sql . "<br>" . mysqli_error($conn));
-                            }
-                            $row1=mysqli_fetch_array($result1);
-                            $name=$row1['name'];
-                            echo $name;
-                        ?>                
-                    </h4>
-                </div>                
-                <div class="b2">
-                    <?php
-                        $status=$row['status'];
-                        echo $status;
-                    ?>
+                            $status=$row['status'];
+                            echo $status;
+                        ?>
+                    </div>
+                    <div class="b3">
+                        <?php
+                            $datetime= $row['datetime'];
+                            echo "Time : " . date("H:i \H\\r\s T | d M Y",strtotime($datetime));                        
+                        ?>
+                    </div>               
                 </div>
-                <div class="b3">
-                    <?php
-                        $datetime= $row['datetime'];
-                        echo "Time : " . date("H:i \H\\r\s T | d M Y",strtotime($datetime));                        
-                    ?>
-                </div>               
+                 <?php
+                    }
+                    mysqli_close($conn);  
+                ?>                       
             </div>
-             <?php
-                }
-                mysqli_close($conn);  
-            ?>                       
-        </div>
+        </div>            
         <div class="c">
             <div class="cc1">
                 <div class="connect">
@@ -166,5 +168,7 @@
                 </div>
             </div>
         </div>
+        <script type = "text/javascript" src="js/jquery-3.4.1.min.js"></script> 
+        <script type = "text/javascript" src="js/status.js"></script>         
     </body>
 </html>
